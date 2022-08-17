@@ -1,8 +1,10 @@
 package koschei.models;
 
-public class Island2 {
+// Island2 связан с Wood3 через конструктор (аналогично свяжем Egg6 с Needle7).
+// Аннотация не требуется, т.к. бин конструируется в классе AppConfig.
 
-    private Wood3 wood;
+public class Island2 {
+    private final Wood3 wood;
 
     public Island2(Wood3 wood) {
         this.wood = wood;
